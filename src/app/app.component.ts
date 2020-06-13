@@ -1,4 +1,5 @@
 import { Component,OnInit } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,9 @@ export class AppComponent implements OnInit{
   todoList: any [] = [];
   todoTitle: string;
   todoId: number = 0;
+  constructor(private ngbModal: NgbModal) {
+
+  }
   ngOnInit() {
     this.todoTitle = '';
     this.todoList = [
