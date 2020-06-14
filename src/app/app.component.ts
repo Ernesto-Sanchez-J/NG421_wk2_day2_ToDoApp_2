@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModalComponent } from './modal/modal.component';
 
 @Component({
   selector: 'app-root',
@@ -31,9 +32,10 @@ export class AppComponent implements OnInit{
     // resets our todoTitle variable to an empty string
     this.todoTitle = '';
   }
-  deleteTodo(todo:any) {
-    const index = this.todoList.findIndex(todoItem => todoItem === todo);
-    this.todoList.splice(index, 1);
+  async deleteTodo(todo:any) {
+    const modal = this.ngbModal.open(ModalComponent);
+    //const index = this.todoList.findIndex(todoItem => todoItem === todo);
+    //this.todoList.splice(index, 1);
   }
 
 }
