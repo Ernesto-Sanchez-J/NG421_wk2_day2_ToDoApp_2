@@ -28,6 +28,17 @@ export class TodoService {
 
   async deleteTodo(todo: any) {
     const modal = this.ngbModal.open(ModalComponent);
+    const component: ModalComponent = modal.componentInstance;
+    component.modalInstance = modal;
+
+    const result = await modal.result;
+
+    //if the result is yes
+    if (result === "yes") {
+      const index = this.todoList.findIndex((todoItem) => todoItem === todo);
+      this.todoList.splice(index, 1);
+    }
+
     // const index = this.todoList.findIndex(todoItem => todoItem === todo);
     // this.todoList.splice(index, 1);
   }

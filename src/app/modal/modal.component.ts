@@ -9,18 +9,18 @@ import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalComponent implements OnInit {
 
-  modelInstance: NgbModalRef;
+  modalInstance: NgbModalRef;
   constructor() { }
 
   ngOnInit() {
   }
 
   close() {
-    this.modelInstance.close('no');
+    this.modalInstance.close('no');
   }
 
   yes() {
-    this.modelInstance.close('yes');
+    this.modalInstance.close('yes');
   }
 
 
