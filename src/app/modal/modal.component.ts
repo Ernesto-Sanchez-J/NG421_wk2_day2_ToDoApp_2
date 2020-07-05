@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { ThrowStmt } from '@angular/compiler';
 
 @Component({

@@ -1,5 +1,5 @@
-import { Component,OnInit } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ModalComponent } from './modal/modal.component';
 
 @Component({
@@ -7,7 +7,7 @@ import { ModalComponent } from './modal/modal.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'Todos';
   todoList: any [] = [];
   todoTitle: string;
