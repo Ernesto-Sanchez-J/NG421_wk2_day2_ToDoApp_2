@@ -10,7 +10,7 @@ import { ThrowStmt } from '@angular/compiler';
 export class ModalComponent implements OnInit {
 
   modelInstance: NgbModalRef;
-  constructor(NgbModal: NgbModal) { }
+  constructor() { }
 
   ngOnInit() {
   }
