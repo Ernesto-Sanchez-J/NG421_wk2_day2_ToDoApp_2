@@ -14,5 +14,3 @@ export class AppComponent implements OnInit {
   }
 }
 
-// this.todoTitle = '';
-// this.todoList = [];

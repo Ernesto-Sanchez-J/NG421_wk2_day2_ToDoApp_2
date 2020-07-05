@@ -14,17 +14,16 @@ export class TodoService {
 
   constructor(private ngbModal: NgbModal) {}
 
-  addTodo(): void {
+  addTodo(todoTitle: string) {
     this.todoList.push({
       id: this.todoId,
-      title: this.todoTitle,
+      title: todoTitle,
       description: '',
     });
 
-    this.todoTitle = '';
+
     this.todoId++;
-    // resets our todoTitle variable to an empty string
-    this.todoTitle = '';
+
   }
 
   async deleteTodo(todo: any) {
