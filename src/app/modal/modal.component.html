@@ -1,8 +1,6 @@
 <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
-    <button type="button" class="close" aria-label="Close" (click)="close()">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <h4 class="modal-title" id="modal-basic-title">Delete Task</h4>
+    <button type="button" class="close" aria-label="Close" (click)="close()"><span aria-hidden="true">&times;</span></button>
   </div>
   <div class="modal-body">
     <form>
@@ -10,5 +8,6 @@
     </form>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="yes()">Save</button>
+    <button type="button" class="btn btn-danger mr-2" (click)="yes()">Yes</button>
+    <button type="button" class="btn btn-primary" (click)="close()">No</button>
   </div>
