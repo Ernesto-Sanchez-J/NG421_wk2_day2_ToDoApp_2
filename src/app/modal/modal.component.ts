@@ -15,11 +15,11 @@ export class ModalComponent implements OnInit {
   ngOnInit() {
   }
 
-  close(){
+  close() {
     this.modelInstance.close('no');
   }
 
-  yes(){
+  yes() {
     this.modelInstance.close('yes');
   }
 
